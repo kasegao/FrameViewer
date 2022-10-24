@@ -1,9 +1,9 @@
-from dataclasses import dataclass
 import json
 import tkinter as tk
 import tkinter.filedialog
-from typing import Optional
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 
 import cv2
 import numpy as np
@@ -248,6 +248,7 @@ class FrameViewer:
 
         self.video = video
         self.frame = frame
+        self.frame_cache.clear()
         self.frame_count = int(self.video.get(cv2.CAP_PROP_FRAME_COUNT))
         max_frame_no = self.frame_count - 1
         self.frame_no_str.set(f"/ {max_frame_no}")

@@ -18,7 +18,7 @@
     "default": {
         "lrupy": {
             "git": "https://github.com/kasegao/lrupy",
-            "ref": "16ab4ee80e04686aeb1f4b1df47a0484187a2636"
+            "ref": "5d98c5971b2bfa3dce4c7a8ac5a92d7d30824ce6"
         },
         "numpy": {
             "hashes": [
